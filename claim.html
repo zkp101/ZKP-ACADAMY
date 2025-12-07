@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>ZKLearn Claim UI</title>
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/
+ethers.min.js"></script>
+</head>
+<body>
+<h2>ZKLearn — Claim Tokens</h2>
+<p>Paste the voucher JSON you received from the bot or server below, then
+click Claim. This will call the AirdropRedeemer contract to redeem tokens.</
+p>
+<textarea id="voucher" rows="10" cols="80" placeholder='Paste voucher JSON
+here'></textarea><br/>
+<input id="signature" placeholder="Paste signature here (hex)" size="70" /
+><br/>
+<button id="claimBtn">Claim on chain</button>
+<pre id="out"></pre>
+<script src="./claim.js"></script>
+</body>
+</html>
